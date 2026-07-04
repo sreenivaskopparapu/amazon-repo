@@ -5,10 +5,10 @@ FROM eclipse-temurin:21-jdk
 WORKDIR /app
 
 # Copy the JAR file
-COPY target/*.jar app.jar
+COPY target/*.jar amazonapp.jar
 
 # Expose application port
 EXPOSE 8080
 
 # Run the application
-ENTRYPOINT ["java", "-jar", "app.jar"]
+ENTRYPOINT ["java", "-jar", "amazonapp.jar"]
