@@ -10,4 +10,8 @@ public class AmazonController {
     public String show(){
         return "welcome to Amazon factory";
     }
+    @GetMapping("/amazon")
+    public String amazon(){
+        return "amazon bigbillion days started";
+    }
 }
